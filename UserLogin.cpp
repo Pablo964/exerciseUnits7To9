@@ -1,3 +1,9 @@
+/*
+ * Pablo Sánchez Alonso
+ * Program that asks for a username and password
+ *  and allows a maximum of three attempts
+ */
+ 
 #include <iostream>
 using namespace std;
 
@@ -20,6 +26,7 @@ int main()
     }
     while(( user != correctUser || password != correctPassword) 
             && (attemps < 3 ));
+            
     if ( user != correctUser || password != correctPassword )
     {
         cout << "You have exceeded the number of attempts try again later";
